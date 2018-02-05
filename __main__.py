@@ -13,8 +13,8 @@ try:
 		command=raw_input('<<<')
 		if command=='help':
 			print(help)
-		elif command[:6]=='use':
-			args=command[7:]
+		elif command[:3]=='use':
+			args=command[4:]
 			try:
 				print path+args
 				dir=os.listdir(path+args)		
