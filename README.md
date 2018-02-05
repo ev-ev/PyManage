@@ -10,3 +10,5 @@ Put your modules as such:
                yourmodule
                    |
                __main__.py
+
+Invoke it by typing "python ." in terminal without quotes
