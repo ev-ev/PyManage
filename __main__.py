@@ -4,7 +4,7 @@ def search(key,dir):
 	for x in os.listdir(dir):
 		if key in x:
 			print '[!]Hit '+x
-	
+python2=raw_input('[*]Command to invoke/link to python (python for linux users):')
 help='PYMANAGE help\nCommands:\nuse - execute a module (use [module])\nsearch - search for modules (search [type] [keyword])'
 path='./modules/'
 try:
@@ -23,7 +23,7 @@ try:
 			if args[:6]=='python':
 				print '[*]Starting module...'
 				try:
-					os.system('python '+path+args)
+					os.system(python2+' '+path+args)
 				except KeyboardInterrupt:
 					print '[*]Module stopping...'
 				except Exception as e:
