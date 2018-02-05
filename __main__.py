@@ -16,7 +16,6 @@ try:
 		elif command[:3]=='use':
 			args=command[4:]
 			try:
-				print path+args
 				dir=os.listdir(path+args)		
 			except OSError:
 				print '[!]No such module'

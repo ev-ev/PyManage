@@ -12,3 +12,7 @@ Put your modules as such:
                __main__.py
 
 Invoke it by typing "python ." in terminal without quotes
+
+E.g.
+
+<<<use python/hello_world
