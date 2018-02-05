@@ -13,7 +13,7 @@ try:
 		command=raw_input('<<<')
 		if command=='help':
 			print(help)
-		elif command[:6]=='attack':
+		elif command[:6]=='use':
 			args=command[7:]
 			try:
 				print path+args
