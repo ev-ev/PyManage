@@ -5,10 +5,10 @@ def search(key,dir):
 		if key in x:
 			print '[!]Hit '+x
 	
-help='PYSPLOIT help\nCommands:\nattack - execute an attack module (attack [attack])\nsearch - search for attacks (search [type] [keyword])'
-path='./attacks/'
+help='PYMANAGE help\nCommands:\nuse - execute a module (use [module])\nsearch - search for modules (search [type] [keyword])'
+path='./modules/'
 try:
-	print '[!]Welcome to pysploit'
+	print '[!]Welcome to pymanage'
 	while True:
 		command=raw_input('<<<')
 		if command=='help':
@@ -19,18 +19,18 @@ try:
 				print path+args
 				dir=os.listdir(path+args)		
 			except OSError:
-				print '[!]No such attack'
+				print '[!]No such module'
 				continue
 			if args[:6]=='python':
-				print '[*]Starting attack module...'
+				print '[*]Starting module...'
 				os.system('python '+path+args)
-				print '[1337]Attack module executed'
+				print '[1337]Module executed'
 				continue
 		elif command[:6]=='search':
 			args=command[7:]
 			keys=args.split(' ')
 			try:
-				search(keys[1],'attacks/'+keys[0])
+				search(keys[1],'modules/'+keys[0])
 				print('[*]Done')
 			except:
 				print('[*]Are you entered the correct arguments?')
