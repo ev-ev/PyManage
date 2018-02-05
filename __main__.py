@@ -22,7 +22,12 @@ try:
 				continue
 			if args[:6]=='python':
 				print '[*]Starting module...'
-				os.system('python '+path+args)
+				try:
+					os.system('python '+path+args)
+				except KeyboardInterrupt:
+					print '[*]Module stopping...'
+				except Exception as e:
+					print '[!]'+str(e)
 				print '[1337]Module executed'
 				continue
 		elif command[:6]=='search':
