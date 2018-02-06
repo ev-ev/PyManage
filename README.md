@@ -15,9 +15,8 @@ Invoke it by typing "python ." in terminal without quotes
 
 E.g.
 
-<<<use python/hello_world
+<<<use python2/hello_world
 
-<<<search python hello
+<<<search python2 hello
 
 *
-python3 scrips and executables are not available yet
