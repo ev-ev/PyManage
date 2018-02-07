@@ -17,7 +17,7 @@ except Exception as e:
 	file=open('settings.spagett','w')
 	file.write(python2+'\n'+python3)
 	file.close()
-help='PYMANAGE help\nCommands:\nuse - execute a module (use [module])\nsearch - search for modules (search [type] [keyword])'
+help='PYMANAGE help\nCommands:\nuse - execute a module (use [module])\nsearch - search for modules (search [type] [keyword])\nclear - clears the screen'
 path='./modules/'
 try:
 	print '[!]Welcome to pymanage'
@@ -62,6 +62,8 @@ try:
 				print('[*]Are you entered the correct arguments?')
 		elif command=='':
 			continue
+		elif command=='clear':
+			print ("\n" * 100)
 		else:
 			print(help)
 			
