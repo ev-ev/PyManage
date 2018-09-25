@@ -18,5 +18,3 @@ E.g.
 <<<use python2/hello_world
 
 <<<search python2 hello
-
-*
