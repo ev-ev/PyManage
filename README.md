@@ -9,7 +9,7 @@ Put your modules as such:
                    |
                yourmodule
                    |
-               \__main\__.py
+               \_\_main\_\_.py
 
 Invoke it by typing "python ." in terminal without quotes
 
