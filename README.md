@@ -11,7 +11,7 @@ Put your modules as such:
                    |
                \_\_main\_\_.py
 
-Invoke it by typing "python ." in terminal without quotes
+Invoke it by typing "python ." or "python3 ." in terminal without quotes
 
 E.g.
 
